@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Alterações</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
@@ -54,12 +55,39 @@
     </header>
 
     <main>
-
+        <section>
+            <div>
+                <button>Fazer Agendamento</button>
+                <button>Alterar/Deletar Agendamentos</button>
+                <button>Gerar Relatório</button>
+            </div>
+            <div>
+                <form action="/action_page.php">
+                    <select id="sala" name="sala" class="filtro-agendamento">
+                    <option value="docente">Sala</option>
+                    <option value="docente1">Luana</option>
+                    <option value="docente2">Celso</option>
+                    <option value="docente3">Fernando</option>
+                    </select>
+                </form>
+                <form action="/action_page.php">
+                    <select id="filtro-docente" name="docente" class="filtro">
+                    <option value="docente">Docente</option>
+                    <option value="docente1">Luana</option>
+                    <option value="docente2">Celso</option>
+                    <option value="docente3">Fernando</option>
+                    </select>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <!-- FOOTER -->
+        <section id="footer">
 
+        </section>
     </footer>
-    
+
 </body>
 </html>
