@@ -8,14 +8,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <div id="global-container">
     <header>
         <!-- MENU -->
         <section id="menu">
             <div id="topo">
                 <img src="img/logoSenac.png" alt="logo do senac" id="logo">
-                <p id="titulo-topo">Senac São Paulo</p>    
-                <button id="botaoLogin">Administração</button>
+                <p id="titulo-topo">Senac Lapa Tito</p>    
+                <button id="botaoLogin" onclick="document.getElementById('id01').style.display='block'">Administração</button>
             </div>
+
+            <!-- MODAL LOGIN -->
+
+            <!-- Modal -->
+            
+                <div id="id01" class="modalLogCad">
+                    
+                <!-- Modal CONTEÚDO -->
+                    <form class="modal-content animate" action="/action_page.php" id="loginADM">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
+                    <div class="imgcontainer">
+                        <img src="https://www.greenrio.com.br/wp-content/uploads/Logo_Senac-350gr.png" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="container">
+                        <label for="uname"><b>Usuário</b></label>
+                        <input type="text" placeholder="Digite o usuário" name="uname" required>
+                        <label for="psw"><b>Senha</b></label>
+                        <input type="password" placeholder="Digite a senha" name="psw" required>
+                        <span class="psw"><a href="#">Esqueceu sua senha?</a></span>
+                        <button type="submit">Entrar</button>
+                
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="abreFechaCad()" class="cancelbtn">Cadastre-se</button>
+                
+                    </div>
+                    </form>
+                </div>
+
+                <div id="id02" class="modalLogCad">
+                    
+                <!-- Modal CONTEÚDO -->
+                    <form class="modal-content animate" action="/action_page.php" id="loginADM">
+                        <span onclick="document.getElementById('id02').style.display='none'"
+                        class="close" title="Close Modal">&times;</span>
+                    <div class="imgcontainer">
+                        <img src="https://www.greenrio.com.br/wp-content/uploads/Logo_Senac-350gr.png" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="container">
+                        <label for="uname"><b>Nº de Registro</b></label>
+                        <input type="text" placeholder="Informe seu NR" name="uname" required>
+
+                        <label for="psw"><b>Senha</b></label>
+                        <input type="password" placeholder="Digite a senha" name="psw" required>
+
+                        <label for="psw"><b>Confirmar senha</b></label>
+                        <input type="password" placeholder="Confirme a senha" name="psw" required>
+
+                        <button type="submit">Cadastrar</button>
+                
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="abreFechaLogin()" class="cancelbtn">Fazer Login</button>
+                
+                    </div>
+                    </form>
+                </div>
+            
+
+
 
             <!-- FILTROS -->
             <div id="filtros">
@@ -85,6 +147,27 @@
                             <td>Sala-18 8:30-12:30</td>
                         </tr>
                     </div>
+                    <div id="mini-card-salas">
+                        <tr>
+                            <td>Arquitetura e Urbanismo</td>
+                            <td>Regina</td>
+                            <td>Sala-18 8:30-12:30</td>
+                        </tr>
+                    </div>
+                    <div id="mini-card-salas">
+                        <tr>
+                            <td>Arquitetura e Urbanismo</td>
+                            <td>Regina</td>
+                            <td>Sala-18 8:30-12:30</td>
+                        </tr>
+                    </div>
+                    <div id="mini-card-salas">
+                        <tr>
+                            <td>Arquitetura e Urbanismo</td>
+                            <td>Regina</td>
+                            <td>Sala-18 8:30-12:30</td>
+                        </tr>
+                    </div>
                 </div>    
 
                 <div class="card-turnos">
@@ -110,6 +193,27 @@
                             <td>Sala-18 8:30-12:30</td>
                         </tr>   
                     </div>
+                    <div id="mini-card-salas">
+                        <tr>
+                            <td>Arquitetura e Urbanismo</td>
+                            <td>Regina</td>
+                            <td>Sala-18 8:30-12:30</td>
+                        </tr>
+                    </div>
+                    <div id="mini-card-salas">
+                        <tr>
+                            <td>Arquitetura e Urbanismo</td>
+                            <td>Regina</td>
+                            <td>Sala-18 8:30-12:30</td>
+                        </tr>
+                    </div>
+                    <div id="mini-card-salas">
+                        <tr>
+                            <td>Arquitetura e Urbanismo</td>
+                            <td>Regina</td>
+                            <td>Sala-18 8:30-12:30</td>
+                        </tr>
+                    </div>
                 </div>
 
                 <div class="card-turnos">
@@ -134,6 +238,27 @@
                                 <td>Regina</td>
                                 <td>Sala-18 8:30-12:30</td>
                             </tr>   
+                        </div>
+                        <div id="mini-card-salas">
+                            <tr>
+                                <td>Arquitetura e Urbanismo</td>
+                                <td>Regina</td>
+                                <td>Sala-18 8:30-12:30</td>
+                            </tr>
+                        </div>
+                        <div id="mini-card-salas">
+                            <tr>
+                                <td>Arquitetura e Urbanismo</td>
+                                <td>Regina</td>
+                                <td>Sala-18 8:30-12:30</td>
+                            </tr>
+                        </div>
+                        <div id="mini-card-salas">
+                            <tr>
+                                <td>Arquitetura e Urbanismo</td>
+                                <td>Regina</td>
+                                <td>Sala-18 8:30-12:30</td>
+                            </tr>
                         </div>                            
                 </div>
             </div>
@@ -144,9 +269,15 @@
     <footer>
         <!-- FOOTER -->
         <section id="footer">
+            <span id="titulo-footer">Senac Lapa Tito</span> 
+            <span>Desenvolvido pela equipe de TII04 e TII05</span>
 
         </section>
     </footer>
+
+</div>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
