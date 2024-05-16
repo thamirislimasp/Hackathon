@@ -75,62 +75,68 @@
 
                 <form action="/action_page.php" class="campos">
                     <label for="text">Curso: </label>
-                    <select name="area">                    
+                    <select name="area" class="input">                    
                     <option value="area"></option>
                     </select>
                 </form>
 
                 <form action="/action_page.php" class="campos">
                     <label for="text">Sub-área: </label>
-                    <input type="text">
+                    <input type="text" class="input">
                 </form>
 
                 <form action="/action_page.php" class="campos">
                     <label for="text">Sigla: </label>
-                    <select name="area">                    
+                    <select name="area" class="input">                    
                     <option value="area"></option>
                     </select>
                 </form>
 
                 <form action="/action_page.php" class="campos">
                     <label for="text">Cód. Turma: </label>
-                    <input type="text">
+                    <input type="text" class="input">
                 </form>
 
                 <form action="/action_page.php" class="campos">
                     <label for="text">Cód. Oferta: </label>
-                    <input type="text">
+                    <input type="text" class="input" disabled>
                 </form>
 
                 <form action="/action_page.php" class="campos">
                     <label for="text">Docente: </label>
-                    <select id="filtro-area" name="area">                    
+                    <select name="area" class="input">                    
                     <option value="area"></option>
                     </select>
                 </form>
 
-                <form action="/action_page.php" class="campos">
-                    <label for="text">De: </label>
-                    <input type="date" id="calendario" name="calendario">
-                </form>
+                <div>
+                    <form action="/action_page.php" class="campos">
+                        <label for="text">De: </label>
+                        <input type="date" class="input" name="calendario">
+                    </form>
 
-                <form action="/action_page.php" class="campos">
-                    <label for="text"> Até: </label>
-                    <input type="date" id="calendario" name="calendario">
-                </form>
+                    <form action="/action_page.php" class="campos">
+                        <label for="text"> Até: </label>
+                        <input type="date" class="input" name="calendario">
+                    </form>
+                </div>
 
-                <form action="/action_page.php" class="campos">
-                    <label for="appt">Ínicio:</label>
-                    <input type="time" id="appt" name="appt">
-                </form>
+                <div>
+                    <form action="/action_page.php" class="campos">
+                        <label for="appt">Ínicio:</label>
+                        <input type="time" class="input" name="appt">
+                    </form>
 
-                <form action="/action_page.php" class="campos">
-                    <label for="appt">Fim:</label>
-                    <input type="time" id="appt" name="appt">
-                </form>
+                    <form action="/action_page.php" class="campos">
+                        <label for="appt">Fim:</label>
+                        <input type="time" class="input" name="appt">
+                    </form>
+                </div>
 
-                <button class="campos">Agendar</button>
-                <button class="campos">Limpar</button>                  
+                <div class="botoes">
+                    <button class="btn">Agendar</button>
+                    <button class="btn">Limpar</button>                  
+                </div>
             </div>
 
             <!-- CALENDÁRIO -->
@@ -211,7 +217,7 @@
 
             <div id="filtros-agendamento">
                 <form action="/action_page.php">
-                    <select id="sala" name="sala" class="filtro-agn">
+                    <select id="sala" name="sala" class="filtro-agn" >
                     <option value="docente">Sala</option>
                     </select>
                 </form>
@@ -286,64 +292,64 @@
 
             <form action="/action_page.php" class="campos">
                 <label for="text">Curso: </label>
-                <select name="area">                    
+                <select name="area" class="input">                    
                 <option value="area"></option>
                 </select>
             </form>
 
             <form action="/action_page.php" class="campos">
                 <label for="text">Sub-área: </label>
-                <input type="text">
+                <input type="text" class="input">
             </form>
 
             <form action="/action_page.php" class="campos">
                 <label for="text">Sigla: </label>
-                <select name="area">                    
+                <select name="area" class="input">                    
                 <option value="area"></option>
                 </select>
             </form>
 
             <form action="/action_page.php" class="campos">
                 <label for="text">Cód. Turma: </label>
-                <input type="text">
+                <input type="text" class="input">
             </form>
 
             <form action="/action_page.php" class="campos">
                 <label for="text">Cód. Oferta: </label>
-                <input type="text">
+                <input type="text" class="input">
             </form>
 
             <form action="/action_page.php" class="campos">
                 <label for="text">Docente: </label>
-                <select id="filtro-area" name="area">                    
+                <select id="filtro-area" name="area" class="input">                    
                 <option value="area"></option>
                 </select>
             </form>
 
             <form action="/action_page.php" class="campos">
                 <label for="text">De: </label>
-                <input type="date" id="calendario" name="calendario">
+                <input type="date" class="input" name="calendario">
             </form>
 
             <form action="/action_page.php" class="campos">
                 <label for="text"> Até: </label>
-                <input type="date" id="calendario" name="calendario">
+                <input type="date" class="input" name="calendario">
             </form>
 
             <form action="/action_page.php" class="campos">
                 <label for="appt">Ínicio:</label>
-                <input type="time" id="appt" name="appt">
+                <input type="time" class="input" name="appt">
             </form>
 
             <form action="/action_page.php" class="campos">
                 <label for="appt">Fim:</label>
-                <input type="time" id="appt" name="appt">
+                <input type="time" class="input" name="appt">
             </form>
 
             <!-- BOTÕES DE AÇÃO -->
 
-            <button class="campos">Agendar</button>
-            <button class="campos">Limpar</button> 
+            <button class="btn">Agendar</button>
+            <button class="btn">Limpar</button> 
 
             <!-- CALENDÁRIO -->
             
@@ -449,7 +455,7 @@
                     </label>
                 </div>
 
-                <button>Gerar Relatório</button>
+                <button class="btn">Gerar Relatório</button>
 
                 <table>
                     <thead>
