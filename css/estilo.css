@@ -54,6 +54,147 @@ body {
     background-color: #5c88f8;
 }
 
+/* MODAL LOGIN */
+
+/* Bordered form */
+#loginADM {
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  /* Full-width inputs */
+  #loginADM input[type=text], #loginADM input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  #loginADM button {
+    background-color: #F7941D;
+    color: white;
+    padding: 0 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    width: auto;
+  }
+  
+  /* Add a hover effect for buttons */
+  #loginADM button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  #loginADM .cancelbtn {
+    width: auto;
+    padding: 0px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  #loginADM .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  #loginADM img.avatar {
+    width: 40%;
+    /* border-radius: 50%; */
+  }
+  
+  /* Add padding to containers */
+  #loginADM .container {
+    padding: 16px; 
+  }
+  
+  /* The "Forgot password" text */
+  #loginADM span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+/* The Modal (background) */
+.modalLogin {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    margin: auto;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;/* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+  
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
 /* FILTROS */
 
 #filtros {
@@ -114,6 +255,77 @@ body {
     border-top: 5px solid #F7941D;
 }
 
+
+/* PÁG ADMINISTRADOR */
+
+
+/* AGENDAMENTO */
+
+#acoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#acao-atual {
+    font-family: sanchez;
+    color: #004A8D;
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.botao-acoes {
+    font-family: sanchez;
+    color: #004A8D;
+    margin: 10px;
+    font-size: small;
+}
+
+.botao-acoes:hover {
+    text-decoration: underline;    
+}
+
+#filtros-agendamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.filtro-agn {
+    padding: 2px 5px;
+    margin: 5px 10px;
+    border: none;
+    background-color: #004A8D;
+    color: white;
+    border-radius: 2px;
+}
+
+#periodos {
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+}
+
+/* CAMPOS PREENCHIMENTO */
+
+#campos-preenchimento {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.campos {
+    margin: 5px;
+}
+
+
+
+
+
+/* A PARTIR DE 720px */
 
 @media screen and (min-width: 720px) {
 
