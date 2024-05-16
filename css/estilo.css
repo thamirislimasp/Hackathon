@@ -321,6 +321,118 @@ body {
     margin: 5px;
 }
 
+/* CALENDÁRIO */
+
+/* calendário */
+ul {list-style-type: none;}
+#container-calendario{
+    width: 400px;
+    height: 100%;
+    box-shadow: 1px 1px 9px black;
+    border-radius: 10px;
+}
+  /* Month header */
+.month {
+    /* padding: 70px 25px; */
+    width: 100%;
+    background: #004A8D;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Month list */
+  .month ul {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* Previous button inside month header */
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  /* Next button */
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  /* Weekdays (Mon-Sun) */
+  .weekdays {
+    margin: 0;
+    height: 30px;
+    padding: auto;
+    padding-top: 10px;
+    background-color:#fff;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 11.6%;
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  /* Days (1-31) */
+  .days {
+    border-radius: 0 0 10px 10px;
+    padding: 10px auto;
+    background: #fff;
+    margin: 0;
+  }
+  
+  .days li {
+    margin: 5px 0px;
+    list-style-type: none;
+    display: inline-block;
+    width: 11.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  /* Highlight the "current" day */
+  .parcial {
+    padding: 3px 0;
+    border-radius: 5px;
+    background: #FDC180;
+    color: white !important
+  }
+  .domingo{
+    padding: 3px 0;
+    border-radius: 5px;
+    background: #2D2D2D;
+    color: white !important
+  }
+  .dias{
+    padding: 3px 0;
+    border-radius: 5px;
+    background: #FF9D0A;
+    color: white !important
+  }
+  .indispo{
+    padding: 3px 0px;
+    border-radius: 5px;
+    background: #C5C5C5;
+    color: white !important
+  }
+  .dispo{
+    padding: 3px 0px;
+    border-radius: 5px;
+    background: #004A8D;
+    color: white !important
+  }
+
 
 
 
