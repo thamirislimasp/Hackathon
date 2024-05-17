@@ -346,12 +346,18 @@ main {
 #periodos {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: smaller;
+    margin: 10px;
+}
+
+.container {
+  margin: 0 6px;
 }
 
 /* CAMPOS PREENCHIMENTO */
 
-#campos-preenchimento {
+.campos-preenchimento {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
@@ -399,10 +405,27 @@ main {
 
 /* CALENDÁRIO */
 
-#container-calendario {
+.container-calendario {
   display: none;
 }
 
+
+/* PÁG. ALTERAÇÕES */
+
+/* BUSCA PARA ALTERAÇÕES AGENDAMENTO */
+
+.busca-alterar {
+  display: flex;
+  justify-content: center;;
+}
+
+#tabela-titulo th {
+  margin: 20px;
+}
+
+.card {
+  background-color: #FDC180;
+}
 
 /* ----------------- */
 /* A PARTIR DE 720px */
@@ -483,26 +506,28 @@ main {
 
     /* CAMPOS PREENCHIMENTO */
 
-    #container-agendamento {
+   .container-agendamento {
       display: flex;
       margin: 20px;
     }
 
-    #campos-preenchimento {
+    .campos-preenchimento {
       width: 50%;
     }
+
 
     /* CALENDÁRIO */
 
     ul {list-style-type: none;}
 
-    #container-calendario{
+    .container-calendario{
       display: block;
       width: 400px;
       box-shadow: 1px 1px 9px black;
       border-radius: 10px;
       margin: 30px 0;
     }
+
       /* Month header */
     .month {
       /* padding: 70px 25px; */
