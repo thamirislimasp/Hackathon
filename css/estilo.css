@@ -303,6 +303,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
 }
 
 #acao-atual {
@@ -314,10 +316,10 @@ main {
 }
 
 .botao-acoes {
-    font-family: sanchez;
-    color: #004A8D;
-    margin: 10px;
-    font-size: small;
+  font-family: sanchez;
+  color: #004A8D;
+  margin: 10px;
+  font-size: small;
 }
 
 .botao-acoes:hover {
@@ -371,6 +373,14 @@ main {
   margin: 1px;
 }
 
+#curso-01 {
+  width: 270px;
+}
+
+.data-reserva, .horario-reserva {
+  display: flex;
+}
+
 .botoes {
   display: flex;
   justify-content: center;
@@ -379,7 +389,7 @@ main {
 .btn {
   margin: 10px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   border: none;
   background-color: #FF9D0A;
   color: white;

@@ -30,11 +30,11 @@
 
 
             <!-- AÇÕES PRINCIPAIS -->
-
-            <a class="botao-acoes" id="acao-atual" onclick="agendar()">Fazer Agendamento</a>
-            <a class="botao-acoes" onclick="alterar()">Alterar/Deletar Agendamentos</a>
-            <a class="botao-acoes" onclick="gerar()">Gerar Relatório</a>
-
+            <div id="acoes">
+                <a class="botao-acoes" id="acao-atual" onclick="agendar()">Fazer Agendamento</a>
+                <a class="botao-acoes" onclick="alterar()">Alterar/Deletar Agendamentos</a>
+                <a class="botao-acoes" onclick="gerar()">Gerar Relatório</a>
+            </div>
 
             <!-- FILTROS -->
 
@@ -74,7 +74,7 @@
 
                     <form action="/action_page.php" class="campos">
                         <label for="text">Curso: </label>
-                        <select name="area" class="input">                    
+                        <select name="area" class="input"  id="curso-01">                    
                         <option value="area"></option>
                         </select>
                     </form>
@@ -108,7 +108,7 @@
                         </select>
                     </form>
 
-                    <div>
+                    <div class="data-reserva">
                         <form action="/action_page.php" class="campos">
                             <label for="text">De: </label>
                             <input type="date" class="input" name="calendario">
@@ -120,7 +120,7 @@
                         </form>
                     </div>
 
-                    <div>
+                    <div class="horario-reserva">
                         <form action="/action_page.php" class="campos">
                             <label for="appt">Ínicio:</label>
                             <input type="time" class="input" name="appt">
@@ -137,6 +137,7 @@
                         <button class="btn">Limpar</button>                  
                     </div>
                 </div>
+                
 
                 <!-- CALENDÁRIO -->
                 <section id="calendario-exibicao">
