@@ -721,10 +721,10 @@ main {
 
 /* buscadores com autocomplete */
 
-#doc-search{
+/*#doc-search{
   width: 50%;
   margin: 20px auto;
-}
+}*/
 
 #doc-input[type=text]{
   width: 100%;
