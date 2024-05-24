@@ -17,9 +17,7 @@
                 <p id="titulo-topo">Senac Lapa Tito</p>    
                 <button id="botaoLogin" onclick="document.getElementById('id01').style.display='block'">Administração</button>
             </div>
-
             <!-- MODAL LOGIN -->
-
             <!-- Modal -->
             
                 <div id="id01" class="modalLogCad">
@@ -31,22 +29,22 @@
                     <div class="imgcontainer">
                         <img src="https://www.greenrio.com.br/wp-content/uploads/Logo_Senac-350gr.png" alt="Avatar" class="avatar">
                     </div>
-                    <div class="container">
+                    <div class="container btn-position">
                         <label for="uname"><b>Usuário</b></label>
                         <input type="text" placeholder="Digite o usuário" name="uname" required>
                         <label for="psw"><b>Senha</b></label>
                         <input type="password" placeholder="Digite a senha" name="psw" required>
-                        <span class="psw"><a href="#">Esqueceu sua senha?</a></span>
-                        <button type="submit">Entrar</button>
+                        <span class="psw" style="display: block;"><a href="#">Esqueceu sua senha?</a></span>
+                        <div id="btn-position"><button type="submit"><a href="alteracoes.html">Entrar</a></button></div>
                 
                     </div>
-                    <div class="container" style="background-color:#f1f1f1">
+                    
+                    <div class="container" style="background-color:#f1f1f1" id="btn-position">
                         <button type="button" onclick="abreFechaCad()" class="cancelbtn">Cadastre-se</button>
                 
                     </div>
                     </form>
                 </div>
-
                 <div id="id02" class="modalLogCad">
                     
                 <!-- Modal CONTEÚDO -->
@@ -59,25 +57,19 @@
                     <div class="container">
                         <label for="uname"><b>Nº de Registro</b></label>
                         <input type="text" placeholder="Informe seu NR" name="uname" required>
-
                         <label for="psw"><b>Senha</b></label>
                         <input type="password" placeholder="Digite a senha" name="psw" required>
-
                         <label for="psw"><b>Confirmar senha</b></label>
                         <input type="password" placeholder="Confirme a senha" name="psw" required>
-
-                        <button type="submit">Cadastrar</button>
+                        <div id="btn-position"><button type="submit">Entrar</button></div>
                 
                     </div>
-                    <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" onclick="abreFechaLogin()" class="cancelbtn">Fazer Login</button>
-                
+                    <div class="container" style="background-color:#f1f1f1" id="btn-position">
+                        <button type="button" onclick="abreFechaLogin()" class="cancelbtn" >Fazer Login</button>
                     </div>
                     </form>
                 </div>
             
-
-
 
             <!-- FILTROS -->
             <div id="filtros">
@@ -89,7 +81,6 @@
                     <option value="mkt">Comunicação e Marketing</option>
                     </select>
                 </form>
-
                 <form action="/action_page.php">
                     <select id="filtro-curso" name="curso" class="filtro">
                     <option value="curso">Curso</option>
@@ -98,7 +89,6 @@
                     <option value="mkt">Marketing</option>
                     </select>
                 </form>
-
                 <form action="/action_page.php">
                     <select id="filtro-docente" name="docente" class="filtro">
                     <option value="docente">Docente</option>
@@ -107,177 +97,147 @@
                     <option value="docente3">Fernando</option>
                     </select>
                 </form>
-
                 <form action="/action_page.php">
                     <input type="date" id="calendario" name="calendario" class="filtro">
                 </form>
             </div>
-        </section>        
+            <div id="periodos" style="display: none;">
+                <label class="container home-periodo">Manhã
+                    <input type="radio" name="radio" >
+                    <span class="checkmark" id="manha-home"></span>
+                </label>
 
+                <label class="container home-periodo">Tarde
+                    <input type="radio" name="radio" id="tarde-home">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container home-periodo">Noite
+                    <input type="radio" name="radio" id="noite-home">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </section>        
     </header>
       
     <main>
+
+        <!-- PAINEIS ATUALIZADOS PARA VISUALIZAÇÃO -->
 
         <section>
             <div id="data-atual">
                 <p>Aulas de Hoje - 14/05/2024</p>
             </div>
-
             <div class="cards">
-                <div class="card-turnos">
+                <div class="card-turnos" id="card-manhã">
                     <h3>Manhã</h3>
-                    <div id="mini-card-salas">
-                            <tr>
-                                <td>Arquitetura e Urbanismo</td>
-                                <td>Regina</td>
-                                <td>Sala-18 8:30-12:30</td>
-                            </tr>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
                 </div>    
-
-                <div class="card-turnos">
+                <div class="card-turnos" id="card-tarde">
                     <h3>Tarde</h3>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>   
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>   
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>   
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
-                    <div id="mini-card-salas">
-                        <tr>
-                            <td>Arquitetura e Urbanismo</td>
-                            <td>Regina</td>
-                            <td>Sala-18 8:30-12:30</td>
-                        </tr>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
                     </div>
                 </div>
-
-                <div class="card-turnos">
+                <div class="card-turnos" id="card-noite">
                     <h3>Noite</h3>
-                        <div id="mini-card-salas">
-                            <tr>
-                                <td>Arquitetura e Urbanismo</td>
-                                <td>Regina</td>
-                                <td>Sala-18 8:30-12:30</td>
-                            </tr>   
-                        </div>
-                        <div id="mini-card-salas">
-                            <tr>
-                                <td>Arquitetura e Urbanismo</td>
-                                <td>Regina</td>
-                                <td>Sala-18 8:30-12:30</td>
-                            </tr>   
-                        </div>
-                        <div id="mini-card-salas">
-                            <tr>
-                                <td>Arquitetura e Urbanismo</td>
-                                <td>Regina</td>
-                                <td>Sala-18 8:30-12:30</td>
-                            </tr>   
-                        </div>
-                        <div id="mini-card-salas">
-                            <tr>
-                                <td>Arquitetura e Urbanismo</td>
-                                <td>Regina</td>
-                                <td>Sala-18 8:30-12:30</td>
-                            </tr>
-                        </div>
-                        <div id="mini-card-salas">
-                            <tr>
-                                <td>Arquitetura e Urbanismo</td>
-                                <td>Regina</td>
-                                <td>Sala-18 8:30-12:30</td>
-                            </tr>
-                        </div>
-                        <div id="mini-card-salas">
-                            <tr>
-                                <td>Arquitetura e Urbanismo</td>
-                                <td>Regina</td>
-                                <td>Sala-18 8:30-12:30</td>
-                            </tr>
-                        </div>                            
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
+                    </div>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
+                    </div>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
+                    </div>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
+                    </div>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
+                    </div>
+                    <div class="mini-card-salas">                            
+                        <p>Arquitetura e Urbanismo</p>
+                        <p>Regina - Sala-18</p>
+                        <p>8:30 - 12:30</p>                            
+                    </div>                            
                 </div>
             </div>
         </section>
-
     </main>
-
     <footer>
         <!-- FOOTER -->
         <section id="footer">
             <span id="titulo-footer">Senac Lapa Tito</span> 
             <span>Desenvolvido pela equipe de TII04 e TII05</span>
-
         </section>
     </footer>
-
 </div>
-
     <script src="js/script.js"></script>
-
 </body>
 </html>
